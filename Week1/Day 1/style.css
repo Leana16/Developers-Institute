@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+}
+header{
+    height:5vh ;
+    background-color: silver;
+    margin-bottom: 5px;
+    color: black;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left:100px ;
+    
+    
+}
+}
+button{
+    color: white;
+    background-color: blue;
+    margin-right: 100px;
+    margin-top: 5px;
+}
