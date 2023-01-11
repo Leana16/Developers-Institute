@@ -1,23 +1,80 @@
-*{
+                                                 
+ *{
     margin: 0px;
 }
 header{
     height:5vh ;
-    background-color: silver;
-    margin-bottom: 5px;
+    background-color: hsl(0, 3%, 85%);
     color: black;
+   
 }
 header nav{
     display: flex;
     justify-content: space-between;
-    margin-left:100px ;
-    
-    
-}
+    margin-left:100px ;  
+    margin-top:5px ; 
+
 }
 button{
     color: white;
     background-color: blue;
     margin-right: 100px;
     margin-top: 5px;
+    border: none;
+    outline:none;
+    border-radius: 4px;
+    height: 20px;
+    outline:none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+ button:hover{
+        transform: translateY(1px);
+        transition: 0.2s;    
+}
+.container{
+   background-image:url("blue water.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 50vh;
+   width: 250vh;
+
+}
+  .container p{
+    margin
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30%;
+    color: white;
+    font-size: 200%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    
+}
+.container input[type=text]{
+     margin-left: 32%;
+     width: 350px;
+     height: 20px;
+     border: 2px solid black;
+     border-radius: 4px;
+     margin-top: 30px;
+
+}
+::placeholder{
+    margin-right: 20px;
+}
+.container button{
+    background-color: hsl(197, 97%, 46%);
+    border: none;
+    outline:none;
+    border-radius: 4px;
+    width: 80px;
+    height: 20px;
+    cursor:pointer;
+}
+.container button:hover{
+transform: translateY(1px);
+transition: 0.2s;
+}
+
+

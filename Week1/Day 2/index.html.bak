@@ -1,5 +1,4 @@
-     
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +10,15 @@
 <body>
     <header>
         <nav>
-            <h5>Start Bootstrap</h5>
+            <h4>Start Bootstrap</h4>
             <button>sign in</button>
         </nav>
     </header> 
-    <div class="container">
-        <p style="margin-top: 20px;">Build a landing page for your business <br>or project and generate more leads!</p>
+    <div>  
+        <p>Build a landing page for your business or project and generate more leads</p>
+
         <input type="text", id="email", placeholder="Enter your email">
-        <button>Sign up!</button>
+     
     </div>
 </body>
 </html>
