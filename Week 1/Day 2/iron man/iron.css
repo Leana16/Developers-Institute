@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+}
+
+body{
+	background-image: url(iron.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+nav{
+	background-color: black;
+	height: 60px;
+	width: 100%;
+	color: white;
+	
+}
+
+h1{
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 10px;
+}
+ul{
+	float: right;
+
+}
+ul li{
+	display: inline-block;
+}
+
+li{
+	padding: 10px;
+	margin-right: 20px;
+	
+}
+
+h2{
+	padding-bottom: 50px;
+	font-size: 60px;
+}
+ div{
+ 	margin-top: 200px;
+ 	margin-bottom: 0;
+ 	margin-left: 70px;
+ }
+
+ p{
+ 	width: 30%;
+ }
+

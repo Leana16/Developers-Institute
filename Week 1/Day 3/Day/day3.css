@@ -1,0 +1,48 @@
+.main{
+    background-color: grey;
+    height: 150px ;
+    width:300px
+}
+.one{
+    background-color: lightblue;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+}
+.two{
+    background-color: orange;
+    height: 50px;
+    width: 150px;
+}
+
+<div class="content">
+     	<div class="navbar">
+     	<img class="icons" src="C:/Users/User/OneDrive/Bureau/DI%20CAM/Week%201/icons.png">
+       <nav>
+       	<p> ONE PRODUCTS </p>
+       </nav>
+     </div>
+     </div>
+
+     *{
+	margin: 0px;
+	padding: 0px;
+}
+.content{
+	 background-color: blue;
+	 height: 50px;
+}
+.navbar{
+	height: 12%;
+	display: inline-block;
+	align-items: center;
+}
+.navbar icons{
+	color: white;
+	width: 0px;
+	height: 10px;
+}
+.nav{
+	text-align: right;
+	margin-left: 10px;
+}

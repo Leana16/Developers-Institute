@@ -1,4 +1,4 @@
-                                                 
+                                                    
  *{
     margin: 0px;
 }
@@ -36,8 +36,7 @@ button{
    background-image:url("blue water.jpg");
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center;
-   height: 50vh;
+   height: 80vh;
    width: 250vh;
 
 }
