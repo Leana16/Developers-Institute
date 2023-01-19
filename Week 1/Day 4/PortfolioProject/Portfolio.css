@@ -1,7 +1,18 @@
-const myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
- myWatchedSeriesLength = myWatchedSeries.length
-console.log(myWatchedSeriesLength)
-let myWatchedLengthstring= myWatchedSeriesLength.toString()
-console.log(myWatchedSeriesLengthstring)
-let watched = "I watched ${myWatchedSeries.length} series: ${myWatchedSeriesLengthstring}"
-console.log(watched)
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+.navbar{
+    background-color: orange;
+    width: 130vh;
+    height: 7vh;
+}
+.container{
+    
+}

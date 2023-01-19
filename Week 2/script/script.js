@@ -57,3 +57,12 @@ console.log(watched)
 let celsius = 37
 let fahrenheit = celsius * 9/5 + 32
 console.log(`${fahrenheit} F`);
+
+
+const myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
+ myWatchedSeriesLength = myWatchedSeries.length
+console.log(myWatchedSeriesLength)
+let myWatchedLengthstring= myWatchedSeriesLength.toString()
+console.log(myWatchedSeriesLengthstring)
+let watched = "I watched ${myWatchedSeries.length} series: ${myWatchedSeriesLengthstring}"
+console.log(watched)
