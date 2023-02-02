@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <script>
+    //accessing the elements
+    /*let users = document.getElementsByTagName("div")[0];
+    console.log(users);
+
+    console.log(users.nextElementSibling)
+
+    let parent = users.nextElementSibling;
+    console.log(parent)
+    console.log(parent.lastElementChild)
+
+    let l = parent.lastElementChild;
+    console.log(l)
+    console.log(l.textContent)
+
+    let parent = users.nextElementSibling;
+    console.log(parent)
+    console.log(parent.firstElementChild)
+
+    let f = parent.firstElementChild;
+    console.log(f)
+    console.log(f.textContent)*/
+
+    //create elements
+    let newDiv = document.createElement('div');
+    //create texts
+    let newTextNode = document.createTextNode('My name is leana');
+    //add both elements and texts
+    newDiv.appendChild(newTextNode);
+    document.body.appendChild(newDiv)
+    //remove texts
+    let d = document.getElementById("top");
+    let d_nested = document.getElementById("nested");
+    let throwawayNode = d.removeChild(d_nested);
+  </script>
+</body>
+</html>
+</body>
+</html>

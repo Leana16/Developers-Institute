@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Event</title>
+</head>
+<body>
+    <!--table id="sampleTable" border="1"> 
+        <tr>
+            <td>Row1 cell1</td> 
+            <td>Row1 cell2</td>
+        </tr> 
+        <tr>
+            <td>Row2 cell1</td> 
+            <td>Row2 cell2</td>
+        </tr> 
+        </table>
+        
+        <input type="button" onclick="insertRow()" value="Insert row"-->  
+    <div id = "js">
+        <button id = "jsstyle">Style</button>
+    </div>
+
+    <form id="form1" onsubmit="getvalue()"> 
+        <label>First name: </label><input type="text" name="fname" value="David"><br> 
+        <label>Last name: </label><input type="text" name="lname" value="BenGurion"><br> 
+        <input type="submit" value="Submit"> 
+
+        <select id="select1"> 
+            <option value="apple">Middle School</option>
+            <option value="pear">University</option>
+            <option value="banana">College</option>
+        </select>
+        
+    </form> 
+<script>   
+/*function insertRow(){
+let table = document.getElementById('sampleTable');
+let trow = document.createElement('tr');
+let tdata = document.createElement('td');
+let tdata1 = document.createElement('td1');
+let cell = document.createTextNode('Row3 cell3');
+let cell1 = document.createTextNode('Row3 cell3');
+table.appendChild(trow)
+trow.appendChild(tdata)
+trow.appendChild(tdata1)
+tdata.appendChild(cell)
+tdata1.appendChild(cell1)
+ }*/
+
+ //addEventListener
+ let a = document.getElementById('jsstyle');
+ a.style.cssText = `color: black; width: 100px; height: 50px; background: aqua; border: none`;
+
+ let b = document.getElementById('js');
+ b.style.cssText = `height: 100px; width: 200px`;
+
+ a.addEventListener("click", clicking);
+ /*a.addEventListener("mouseover", over);
+ a.addEventListener("mouseout", out);*/
+ b.addEventListener("click", clicking1);
+
+ function clicking(e){
+    alert("hey there!")
+ }
+
+ /*function over(e){
+    alert("the mouse is over the button!")
+ }
+
+ function out(e){
+    alert("the mouth is out of the button!")
+ }*/
+
+ function clicking1(e){
+    alert("hello there!")
+    e.stopPropagation()
+ }
+
+// access form
+ let form = document.forms.form1;
+
+ let first = form.elements.fname;
+ console.log(first.value)
+
+ let last = form.elements.lname;
+ console.log(last.value)
+
+ console.log(`my name is ${first.value} ${last.value}`)
+
+//access select
+let op = document.getElementById('select1');
+op.value = 'pear'
+console.log(op.value) 
+//or
+console.log(op.options[1].value)
+
+/*let work = document.createElement('option')
+let tool = document.createTextNode('Work')
+
+op.appendChild(work)
+work.appendChild(tool)*/
+//or
+let work = document.createElement('option')
+op.appendChild(work)
+op.value = 'work'
+console.log(op)
+
+let work1 = document.createElement('option')
+op.add(work1, op[0])
+op.options[0].value = 'Primary school'
+
+op.options[2].text = 'change'
+
+/*function clicking(){
+    let s = op.selectedIndex
+    console.log(s)
+}*/
+</script>
+</body>
+</html>
