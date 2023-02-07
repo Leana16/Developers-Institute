@@ -168,8 +168,9 @@ for i in [2, 3, 4]:
 
 print(my_list)
 
+#dictionary
 family_age = {'Lea': 12, 'Mark': 25, 'George': 50}
 new_year = 1
-family = {name: 'age'+new_year}
-for family in family_age.items():
-    print(family)
+
+new_family_age = {name: age+new_year for (name, age) in family_age.items()}
+print(new_family_age)

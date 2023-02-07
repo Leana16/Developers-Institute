@@ -7,15 +7,18 @@ print(my_dict)
 print(dict(my_dict))
 
 #Exercise 2
-# age = ''
-# if age < 3:
-#     print('the ticket is free')
-# elif 3 >= age <= 12:
-#     print('the ticket is $10')
-# elif age > 12:
-#     print('the ticket is $15')
+family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
+fam = {}
 
-# family = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
+price = 0
+for age in family.values():
+ if age < 3:
+     price += 0
+ elif 3 <= age <= 12:
+     price += 15
+ elif age > 12:
+     price += 15
+   # print('You will pay ${}'.format())
 
 #Exercise 3
 brand = {
@@ -34,7 +37,7 @@ brand = {
 brand['number_stores'] = 2
 print(brand)
 
-txt = 'My clients are {}'.format('types_of_clothes')
+txt = 'My competitors are {}'.format('international_competitors')
 print(txt)
 
 brand['country_creation'] = 'Spain'
@@ -66,13 +69,35 @@ print(brand['number_stores'])
 
 #Exercise 4
 users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+disney_users_A = {}
 
 for  user in enumerate(users):
-    li = list(user)
-    print(li)
+    a, b = user
+    disney_users_A[b] = a
+print(disney_users_A)
 
-list = users.index
-for user in users:
-    list.append(user)
-    print(list)
+disney_users_B = {}
+
+for  user in enumerate(users):
+    c, d = user
+    disney_users_B[c] = d
+print(disney_users_B)
+
+disney_users_C = {}
+sort = sorted(users)
+
+for  user in enumerate(sort):
+    e, f = user
+    disney_users_C[f] = e
+print(disney_users_C)
+
+#Daily challenge
+dic = {}
+words = input('Enter a word: ')
+
+for i, letter in enumerate(words):
+    if letter not in dic:
+        dic[letter] = []
+        dic[letter].append(i)
+print(dic)
     
